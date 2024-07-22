@@ -53,7 +53,7 @@ B. Utilisation du service docker
 	root@2d3de05136bd:/app/data#
 
 
-		4. Lancer le script dans le terminal nouvellement créé par docker 
+		4. Lancer le script --> dans le terminal nouvellement créé par docker 
 			·  Taper dans le terminal docker  : gcc -o list_fichier main.c -lewf -ltsk -lpthread
 			·  Taper dans le terminal docker  : ./list_fichier ./data/XXXXXX.E01
 		
