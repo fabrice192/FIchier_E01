@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  lister :
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app/data
+    container_name: lister
+    environment:
+      - ENV_VAR=value
+    tty: true
+    privileged: true
+    cap_add:
+      - SYS_ADMIN
+    devices:
+      - /dev/fuse
+    restart: always
+
+
+
+
+
+#  docker-compose up -d
+#  docker system prune -a
+
+
+#      docker exec -it lister /bin/bash
+
+#    docker stop lister
+
+
+#   gcc -o list_fichier main.c -lewf -ltsk -lpthread
+#      ./list_fichier ./data/LOUDD03.E01
